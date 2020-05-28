@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web app</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+ 
+</head>
+<body>
+        <h1 class="heading">Web app</h1>
+        <article class="push">
+         <h3 id="subText" class="pushInfo">Get notifications</h3>
+         <button class="subscribe" id="subscribe">subscribe</button>
+       </article>
+
+       <video id="me" width="640" height="480" autoplay></video>
+       <!-- <img src="" id="photo"> -->
+       <button id="snap">Take Photo</button>
+      <canvas id="photo" width="640" height="480"></canvas>
+
+ <div id="changes">
+    <h1>Filters</h1>
+      <label for="birghtness">Birghtness</label>
+      <input type="range" min="-100" max="100" step="1" value="0" data-filter="brightness" id="brightness"/> 
+      <span class="bright">0</span> <br>
+      <label for="exposure">Exposure</label>
+      <input type="range" min="-100" max="100" step="1" value="0" data-filter="exposure" id="exposure" /> 
+      <span class="exp">0</span><br>
+      <label for="noise">Noise</label>
+      <input type="range" min="0" max="100" step="1" value="0" data-filter="noise" id="noise"/> 
+      <span class="noise">0</span><br>
+      <label for="hue">Hue</label>
+      <input type="range" min="0" max="100" step="1" value="0" data-filter="hue" id="hue"/>
+      <span class="hue">0</span><br>
+      <label for="sepia">Sepia</label>
+      <input type="range" min="0" max="100" step="1" value="0" data-filter="sepia" id="sepia"/> 
+      <span class="sepia">0</span><br>
+    
+
+   <button class="revert">Revert</button>
+    <a href="#" id="download" download>
+    <button class="save">Download</button></a>
+    </div>
+ 
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+ <script type="module" src="js/index.js"></script>
+</body>
+</html>
